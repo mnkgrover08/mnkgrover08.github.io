@@ -62,6 +62,50 @@
             }
             nodes.push(parentNode);
         }
+        nodes.push(
+            {
+                id: `sp-1`,
+                label: `Node sp1`,    
+                text: { name: "skip level node l2" },
+                collapsed: false,
+                childrenDropLevel: 2,
+                children: [
+                    {
+                        id: `sp-2`,
+                        label: `Node sp2`,    
+                        text: { name: "skip level node child 1" },
+                        collapsed: true,
+                    },
+                    {
+                        id: `sp-3`,
+                        label: `Node sp3`,    
+                        text: { name: "skip level node child 2" },
+                        collapsed: true,
+                    },
+                ],  
+            },
+            {
+                id: `sp-4`,
+                label: `Node sp4`,    
+                text: { name: "skip level node l3" },
+                collapsed: false,
+                childrenDropLevel: 3,
+                children: [
+                    {
+                        id: `sp-5`,
+                        label: `Node sp5`,    
+                        text: { name: "skip level node child 1" },
+                        collapsed: true,
+                    },
+                    {
+                        id: `sp-6`,
+                        label: `Node sp6`,    
+                        text: { name: "skip level node child 2" },
+                        collapsed: true,
+                    },
+                ],  
+            }
+        );
         return nodes;
     }
 
