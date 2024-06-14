@@ -84,12 +84,13 @@
                 connectorsSpeed: 700
             },
             connectors: {
-                type: "step"
+                type: "curve"
             },
             levelSeparation: 100,
             siblingSeparation: 100,
             subTeeSeparation: 100,
-            padding: 30
+            padding: 30,
+            rootOrientation: "WEST"
         },
         nodeStructure: {
             text: { name: "Parent node" },
